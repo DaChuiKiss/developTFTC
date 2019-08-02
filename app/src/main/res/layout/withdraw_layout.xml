@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_white"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingRight="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/font_size_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount"
+                    android:textColor="@color/text_normal" />
+
+                <TextView
+                    android:id="@+id/tv_withdraw_total"
+                    style="@style/font_size_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="0.00000000"
+                    android:textColor="#37CCB2" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_10">
+
+                <TextView
+                    style="@style/font_size_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/available"
+                    android:textColor="@color/text_normal" />
+
+                <TextView
+                    android:id="@+id/tv_withdraw_balance"
+                    style="@style/font_size_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="0.00000000"
+                    android:textColor="#37CCB2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_10">
+
+                <TextView
+                    style="@style/font_size_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/locked"
+                    android:textColor="@color/text_normal" />
+
+                <TextView
+                    android:id="@+id/tv_withdraw_freeze"
+                    style="@style/font_size_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="0.00000000"
+                    android:textColor="@color/text_red" />
+            </LinearLayout>
+
+            <View
+                style="@style/line"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_white"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_15">
+
+            <TextView
+                style="@style/font_size_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="@string/withdraw_address"
+                android:textColor="@color/text_normal" />
+
+            <EditText
+                android:id="@+id/et_withdraw_address"
+                style="@style/font_size_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_black"
+                android:hint="@string/withdrawAddress"
+                android:minHeight="@dimen/dp_32"
+                android:singleLine="true"
+                android:textColor="@color/text_grey" />
+
+
+            <TextView
+                android:id="@+id/tv_withdraw_address_error"
+                style="@style/font_size_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_red" />
+
+
+            <TextView
+                style="@style/font_size_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="@string/take_value"
+                android:textColor="@color/text_normal" />
+
+            <EditText
+                android:id="@+id/et_withdraw_takeInMinValue"
+                style="@style/font_size_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_black"
+                android:hint="@string/with_draw_amount_edit"
+                android:inputType="numberDecimal"
+                android:minHeight="@dimen/dp_32"
+                android:singleLine="true"
+                android:textColor="@color/text_grey" />
+
+            <TextView
+                android:id="@+id/tv_withdraw_takeOutLeastNumberOrtakeOutMaxNumber"
+                style="@style/font_size_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_red" />
+
+            <TextView
+                style="@style/font_size_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="@string/withdraw_surplus"
+                android:textColor="@color/text_normal" />
+
+            <TextView
+                android:id="@+id/tv_withdraw_usableAmount"
+                style="@style/font_size_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_black"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/dp_32"
+                android:text="10000"
+                android:textColor="@color/text_grey" />
+
+            <TextView
+                style="@style/font_size_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="@string/service_charge"
+                android:textColor="@color/text_normal" />
+
+            <TextView
+                android:id="@+id/tv_withdraw_takeOutCost"
+                style="@style/font_size_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_black"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/dp_32"
+                android:text="10000"
+                android:textColor="@color/text_grey" />
+
+            <TextView
+                style="@style/font_size_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="@string/trade_pwd"
+                android:textColor="@color/text_normal" />
+
+            <EditText
+                android:id="@+id/et_withdraw_dealPassword"
+                style="@style/font_size_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_black"
+                android:hint="@string/trade_pwd_hit"
+                android:inputType="textPassword"
+                android:minHeight="@dimen/dp_32"
+                android:singleLine="true"
+                android:textColor="@color/text_grey" />
+
+            <TextView
+                android:id="@+id/tv_withdraw_dealPassword_error"
+                style="@style/font_size_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_red" />
+
+            <TextView
+                android:id="@+id/text1"
+                style="@style/font_size_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:minHeight="35dp"
+                android:text="@string/code_no"
+                android:textColor="@color/text_normal"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/line_black"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_withdraw_code"
+                    style="@style/font_size_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@null"
+                    android:hint="@string/codeEdit"
+                    android:inputType="number"
+                    android:minWidth="@dimen/dp_210"
+                    android:minHeight="25dp"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/bt_withdraw_getcode"
+                    style="@style/button_shadeless_style"
+                    android:layout_width="@dimen/dp_125"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/et_withdraw_code"
+                    android:background="@drawable/bt_style_blue"
+                    android:text="@string/code"
+                    android:textColor="@color/text_white" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_withdraw_code_error"
+                style="@style/font_size_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_red" />
+
+            <Button
+                android:id="@+id/bt_withdraw_submit"
+                style="@style/button_shadeless_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bt_style_blue"
+                android:gravity="center"
+                android:minHeight="44dp"
+                android:text="@string/submit"
+                android:textColor="@color/text_white" />
+
+            <TextView
+                style="@style/font_size_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/withdraw_warm1"
+                android:textColor="@color/text_grey"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/mycenter_withdraw_id"
+                style="@style/font_size_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/withdraw_warm2"
+                android:textColor="@color/text_grey" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

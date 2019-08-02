@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_white_r10"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dialog_confirm_ios_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="@dimen/dp_60"
+        android:text="是否同意合约?"
+        android:textColor="@color/text_normal"
+        style="@style/font_size_15"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/item_separator" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_dialog_confirm_ios_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/dialog_cancel"
+            android:textColor="@color/text_normal"
+            style="@style/font_size_15" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/item_separator" />
+
+        <TextView
+            android:id="@+id/tv_dialog_confirm_ios_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/dialog_ok"
+            android:textColor="@color/text_blue"
+            style="@style/font_size_15"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_unpaid_notice"
+        style="@style/font_size_12"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:drawableStart="@drawable/icon_notice"
+        android:drawablePadding="@dimen/dp_10"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingStart="@dimen/dp_15"
+        android:paddingEnd="@dimen/dp_15"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/notice_have_ordered_pls_pay"
+        android:textColor="@color/text_blue" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 因为 待付款 页面中基础值是 红色，所以不能 include layout. -->
+            <!-- Order Info -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/dp_15"
+                android:paddingEnd="@dimen/dp_15">
+
+                <!-- 交易单价 -->
+                <LinearLayout
+                    style="@style/common_item_holder_height70"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/otc_item_text"
+                        android:text="@string/tx_price" />
+
+                    <TextView
+                        android:id="@+id/tv_otc_order_price"
+                        style="@style/otc_item_value"
+                        android:textColor="@color/text_red" />
+                </LinearLayout>
+
+                <View style="@style/common_separator_horizontal" />
+
+
+                <!-- 交易数量 -->
+                <LinearLayout
+                    style="@style/common_item_holder_height70"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/otc_item_text"
+                        android:text="@string/tx_quantity" />
+
+                    <TextView
+                        android:id="@+id/tv_otc_order_quantity"
+                        style="@style/otc_item_value"
+                        android:textColor="@color/text_red" />
+                </LinearLayout>
+
+                <View style="@style/common_separator_horizontal" />
+
+
+                <!-- 交易金额 -->
+                <LinearLayout
+                    style="@style/common_item_holder_height70"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/otc_item_text"
+                        android:text="@string/tx_amount" />
+
+                    <TextView
+                        android:id="@+id/tv_otc_order_amount"
+                        style="@style/otc_item_value"
+                        android:textColor="@color/text_red" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/bg_transparent" />
+
+
+            <!-- 卖家显示 -->
+            <include
+                android:id="@+id/ll_unpaid_container_seller"
+                layout="@layout/layout_otc_unpaid_seller"
+                android:visibility="gone" />
+
+
+            <!-- 买家显示 -->
+            <LinearLayout
+                android:id="@+id/ll_unpaid_container_buyer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/dp_15"
+                android:paddingEnd="@dimen/dp_15"
+                android:visibility="visible">
+
+                <!-- Payment method. -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_88">
+
+                    <TextView
+                        android:id="@+id/tv_unpaid_payment_method_text"
+                        style="@style/otc_item_text"
+                        android:text="@string/payment_method" />
+
+                    <TextView
+                        android:id="@+id/tv_unpaid_payment_method"
+                        style="@style/font_size_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/tv_unpaid_payment_method_text"
+                        android:layout_alignParentEnd="true"
+                        android:drawableEnd="@drawable/icon_list_arrow_down_grey"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:text="银行卡付款"
+                        android:textColor="@color/text_normal" />
+
+                    <TextView
+                        style="@style/font_size_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_unpaid_payment_method_text"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="@string/explanation_for_buyer"
+                        android:textColor="@color/text_grey" />
+                </RelativeLayout>
+
+                <View style="@style/common_separator_horizontal" />
+
+
+                <!-- 银行卡被选择时 -->
+                <LinearLayout
+                    android:id="@+id/ll_unpaid_container_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <!-- 银行 -->
+                    <RelativeLayout style="@style/common_item_holder_height70">
+
+                        <TextView
+                            style="@style/otc_item_text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/dp_0"
+                            android:text="@string/bank_card_info" />
+
+                        <TextView
+                            android:id="@+id/tv_otc_order_bank"
+                            style="@style/otc_item_value"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/dp_0"
+                            android:text="招商银行" />
+                    </RelativeLayout>
+
+                    <View style="@style/common_separator_horizontal" />
+
+
+                    <!-- 银行卡号 -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_otc_order_card_num_text"
+                            style="@style/otc_item_text"
+                            android:text="@string/bank_card_number" />
+
+                        <TextView
+                            android:id="@+id/tv_otc_order_card_num"
+                            style="@style/otc_item_value"
+                            android:layout_below="@id/tv_otc_order_card_num_text"
+                            android:text="13588888888" />
+
+                        <ImageView
+                            android:id="@+id/iv_otc_order_card_num_copy"
+                            style="@style/otc_copy_icon" />
+                    </RelativeLayout>
+
+                    <View style="@style/common_separator_horizontal" />
+                </LinearLayout>
+
+
+                <!-- 网络账号支付被选择时 -->
+                <LinearLayout
+                    android:id="@+id/ll_unpaid_container_net"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <!-- 账号 -->
+                    <RelativeLayout style="@style/common_item_holder_height70">
+
+                        <TextView
+                            android:id="@+id/tv_otc_order_account_text"
+                            style="@style/otc_item_text"
+                            android:text="@string/account" />
+
+                        <TextView
+                            android:id="@+id/tv_otc_order_account"
+                            style="@style/otc_item_value"
+                            android:layout_below="@id/tv_otc_order_account_text"
+                            android:text="12@qq.com" />
+
+                        <ImageView
+                            android:id="@+id/iv_otc_order_account_copy"
+                            style="@style/otc_copy_icon" />
+                    </RelativeLayout>
+
+                    <View style="@style/common_separator_horizontal" />
+
+
+                    <!-- 收款码 -->
+                    <RelativeLayout style="@style/common_item_holder_height70">
+
+                        <TextView
+                            style="@style/otc_item_text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/dp_0"
+                            android:text="@string/qr_code" />
+
+                        <ImageView
+                            android:id="@+id/iv_otc_order_QR_code"
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+
+                    <View style="@style/common_separator_horizontal" />
+                </LinearLayout>
+
+
+                <!-- 收款人 -->
+                <RelativeLayout style="@style/common_item_holder_height70">
+
+                    <TextView
+                        android:id="@+id/tv_otc_order_receiver_text"
+                        style="@style/otc_item_text"
+                        android:text="@string/payment_receiver" />
+
+                    <TextView
+                        android:id="@+id/tv_otc_order_receiver"
+                        style="@style/otc_item_value"
+                        android:layout_below="@id/tv_otc_order_receiver_text"
+                        android:text="666666" />
+
+                    <ImageView
+                        android:id="@+id/iv_otc_order_receiver_copy"
+                        style="@style/otc_copy_icon" />
+                </RelativeLayout>
+
+                <View style="@style/common_separator_horizontal" />
+
+
+                <include layout="@layout/layout_otc_order_info_num_refer" />
+
+
+                <TextView
+                    style="@style/font_size_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:text="@string/have_paid_pls_confirm"
+                    android:textColor="@color/text_light" />
+
+
+                <!-- two buttons -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_33"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginBottom="@dimen/dp_30"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_unpaid_cancel"
+                        style="@style/button_shadeless_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/bg_grey"
+                        android:minWidth="@dimen/dp_80"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_5"
+                        android:text="@string/cancel_order"
+                        android:textColor="@color/text_grey" />
+
+                    <Button
+                        android:id="@+id/btn_unpaid_pay"
+                        style="@style/button_shadeless_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:background="@drawable/bt_style_blue"
+                        android:minWidth="@dimen/dp_80"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_5"
+                        android:text="@string/left_time"
+                        android:textColor="@color/text_white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/bg_transparent" />
+
+            <include layout="@layout/layout_otc_exchange_warning_explain" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

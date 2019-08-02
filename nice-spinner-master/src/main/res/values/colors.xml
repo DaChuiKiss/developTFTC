@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_gray">#eeeeee</color>
+    <color name="translate">#00000000</color>
+    <color name="bg_white">#ffffff</color>
+    <color name="color_bg">#EFEFF3</color>
+    <color name="text_normal">#333333</color>
+
+<!--    <color name="light_gray">#334F5B</color>
+    <color name="translate">#00000000</color>
+    <color name="bg_white">#031B25</color>
+    <color name="color_bg">#05181f</color>
+    <color name="text_normal">#F5FFFF</color>-->
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_appealing_notice"
+        style="@style/font_size_12"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:drawableStart="@drawable/icon_notice"
+        android:drawablePadding="@dimen/dp_10"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingStart="@dimen/dp_15"
+        android:paddingEnd="@dimen/dp_15"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="@color/text_blue" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/dp_15"
+                android:paddingEnd="@dimen/dp_15">
+
+
+                <include layout="@layout/layout_otc_order_info_basic" />
+
+                <include layout="@layout/layout_otc_order_buyer_seller" />
+
+
+                <!-- 申诉时间 -->
+                <LinearLayout
+                    style="@style/common_item_holder_height70"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/otc_item_text"
+                        android:text="@string/appeal_time" />
+
+                    <TextView
+                        android:id="@+id/tv_otc_order_time"
+                        style="@style/otc_item_value" />
+                </LinearLayout>
+
+                <View style="@style/common_separator_horizontal" />
+
+
+                <include layout="@layout/layout_otc_order_payment_method" />
+
+                <include layout="@layout/layout_otc_order_info_num_refer" />
+
+
+                <!-- 申诉理由 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/otc_item_text"
+                        android:text="@string/appeal_reason" />
+
+                    <TextView
+
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:id="@+id/tv_otc_order_appeal_reason"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/text_light"
+                        android:textSize="14sp"
+
+                        />
+
+                </LinearLayout>
+
+                <View style="@style/common_separator_horizontal" />
+
+
+                <!-- 申诉凭证 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_105"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/otc_item_text"
+                        android:text="@string/appeal_evidences" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_appealing_img1"
+                            android:layout_width="@dimen/dp_50"
+                            android:layout_height="match_parent" />
+
+                        <ImageView
+                            android:id="@+id/iv_appealing_img2"
+                            android:layout_width="@dimen/dp_50"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/dp_10" />
+
+                        <ImageView
+                            android:id="@+id/iv_appealing_img3"
+                            android:layout_width="@dimen/dp_50"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/dp_10" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/common_separator_horizontal" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_33"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginBottom="@dimen/dp_30"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_appealing_cancel_trade"
+                        style="@style/button_shadeless_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/bg_grey"
+                        android:minWidth="@dimen/dp_80"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10"
+                        android:text="@string/cancel_exchange"
+                        android:textColor="@color/text_grey" />
+
+                    <Button
+                        android:id="@+id/btn_appealing_cancel_appeal"
+                        style="@style/button_shadeless_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:background="@drawable/bt_style_blue"
+                        android:minWidth="@dimen/dp_80"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10"
+                        android:text="@string/cancel_appeal"
+                        android:textColor="@color/text_white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/bg_transparent" />
+
+            <include layout="@layout/layout_otc_exchange_warning" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

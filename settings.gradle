@@ -1,0 +1,1 @@
+include ':app',':kchartlib', ':library',':nice-spinner-master',':matisse',':update-app'

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_bar"/>
+    <LinearLayout
+        android:paddingRight="@dimen/dp_15"
+        android:paddingLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/amount"
+            style="@style/font_size_15"
+            android:textColor="@color/text_normal"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_transferOTC_total"
+            android:text="20000"
+            style="@style/font_size_15"
+            android:textColor="#37CCB2"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:paddingRight="@dimen/dp_15"
+        android:paddingLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/available"
+            android:textColor="@color/text_normal"
+            style="@style/font_size_15"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_transferOTC_useable"
+            style="@style/font_size_15"
+            android:text="10000"
+            android:textColor="#37CCB2"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_15"
+        android:paddingLeft="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/locked"
+            android:textColor="@color/text_normal"
+            style="@style/font_size_15"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_transferOTC_freeze"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/text_red"
+            style="@style/font_size_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_15"
+        />
+
+    <TextView
+        style="@style/font_size_15"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:text="@string/transfer_count"
+        android:textColor="@color/text_normal" />
+
+        <EditText
+            android:hint="@string/edit_transfer"
+            style="@style/font_size_12"
+            android:id="@+id/et_OTCToCoin_transferQuantity"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:background="@drawable/line_black"
+            android:layout_width="match_parent"
+            android:minHeight="@dimen/dp_32"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_height="wrap_content" />
+
+        <TextView
+        android:id="@+id/tv_OTCTOCoin_transferQuantity_error"
+        android:layout_width="match_parent"
+         android:layout_marginLeft="@dimen/dp_15"
+            android:textColor="@color/text_red"
+            style="@style/font_size_12"
+        android:layout_height="wrap_content" />
+
+        <TextView
+
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_width="wrap_content"
+            android:text="@string/trade_pwd"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textColor="@color/text_normal"
+            style="@style/font_size_15"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            style="@style/font_size_12"
+            android:hint="@string/trade_pwd_hit"
+            android:id="@+id/et_mycenter_otcToCoin_accountpwd"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:singleLine="true"
+            android:layout_marginRight="@dimen/dp_15"
+            android:inputType="textPassword"
+            android:background="@drawable/line_black"
+            android:layout_width="match_parent"
+            android:minHeight="@dimen/dp_32"
+            android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_OTCTOCoin_accountpwd_error"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:textColor="@color/text_red"
+        style="@style/font_size_12"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_OTCtoCoin_submit"
+        style="@style/button_shadeless_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/dp_15"
+        android:background="@drawable/bt_style_blue"
+        android:minHeight="44dp"
+        android:text="@string/config"
+        android:textColor="@color/text_white"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_35"
+        android:layout_marginLeft="@dimen/dp_15"
+        style="@style/font_size_13"
+        android:textColor="@color/text_light"
+        android:layout_marginRight="@dimen/dp_15"
+        android:text="@string/transfer_warm_1"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        style="@style/font_size_13"
+        android:textColor="@color/text_light"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="@string/transfer_warm2"
+        />
+
+
+</LinearLayout>
+

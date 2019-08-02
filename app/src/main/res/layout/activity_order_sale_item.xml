@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_7"
+    android:paddingBottom="@dimen/dp_7"
+    android:background="@drawable/line_black"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:id="@+id/tv_list_price"
+        android:gravity="center|left"
+        android:layout_height="match_parent"
+        android:textColor="@color/text_light"
+       style="@style/font_size_11" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:id="@+id/tv_list_count"
+        android:maxLength="12"
+        android:layout_marginRight="@dimen/dp_5"
+        android:singleLine="true"
+        android:textColor="@color/text_light"
+        android:gravity="center|right"
+        style="@style/font_size_11" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/tv_order_trade_index"
+        android:textColor="@color/text_light"
+        android:gravity="center|right"
+       android:layout_height="match_parent"
+        style="@style/font_size_11" />
+
+</LinearLayout>

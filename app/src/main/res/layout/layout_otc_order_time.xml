@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 下单时间 -->
+    <LinearLayout
+        style="@style/common_item_holder_height70"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/otc_item_text"
+            android:text="@string/order_time" />
+
+        <TextView
+            android:id="@+id/tv_otc_order_time"
+            style="@style/otc_item_value" />
+    </LinearLayout>
+
+    <View style="@style/common_separator_horizontal" />
+
+</merge>

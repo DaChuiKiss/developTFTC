@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <!-- Banner -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+        <!-- 滚动公告 -->
+        <com.sunfusheng.marqueeview.MarqueeView
+            android:id="@+id/marqueeView"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:background="#26000000"
+            android:drawablePadding="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_10"
+            app:mvAnimDuration="1000"
+            app:mvDirection="bottom_to_top"
+            app:mvGravity="left"
+            app:mvInterval="3000"
+            app:mvSingleLine="true"
+            app:mvTextColor="@color/text_white"
+            app:mvTextSize="12sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_85"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_goto_invitation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/bonus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="@string/home_bonus"
+                android:textColor="@color/text_normal"
+                style="@style/font_size_14" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_goto_vip"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/huiyuan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="@string/vip"
+                android:textColor="@color/text_normal"
+                style="@style/font_size_14" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_goto_information"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/zixun" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="@string/home_message"
+                android:textColor="@color/text_normal"
+                style="@style/font_size_14"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_goto_app"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/yingyong" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="@string/home_app"
+                android:textColor="@color/text_normal"
+                style="@style/font_size_14"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_smart_home" />
+
+</LinearLayout>

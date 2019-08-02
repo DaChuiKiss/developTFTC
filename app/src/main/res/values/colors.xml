@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 白色系 title主题色-->
+    <color name="colorPrimaryDark">#1E82D2</color>
+    <!--tab切换的选中颜色-->
+   <color name="tab_selector_color">#1E82D2</color>
+   <color name="blue">#0066FF</color>
+    <!--text color-->
+   <color name="text_pink">#32B589</color>
+   <color name="text_normal">#333333</color>
+    <color name="tab_normal">#333333</color>
+   <color name="text_light">#666666</color>
+   <color name="text_grey">#999999</color>
+   <color name="text_red">#F0395C</color>
+   <color name="text_blue">#1E82D2</color>
+   <color name="text_white">#FFFFFF</color>
+   <color name="text_light_yellow">#F2C010</color>
+   <color name="text_yellow">#FDDC7B</color>
+    <!-- background color-->
+    <color name="main_tab_bg">#EFEFF3</color>
+    <color name="color_bg">#EFEFF3</color>
+    <color name="bg_white">#ffffff</color>
+    <color name="bg_light_blue">#379BEC</color>
+    <color name="bg_grey">#EEEEEE</color>
+    <color name="bg_transparent">#00000000</color>
+    <!-- separator color-->
+    <color name="item_separator">#E6E6E6</color>
+
+    <!-- 黑色系
+     title主题色
+    <color name="colorPrimaryDark">#00202d</color>
+    tab切换的选中颜色
+    <color name="tab_selector_color">#1E82D2</color>
+    <color name="blue">#0066FF</color>
+     text color
+    <color name="text_pink">#26CCB3</color>
+    <color name="text_normal">#F5FFFF</color>
+    <color name="text_light">#3D5260</color>
+    <color name="tab_normal">#677F8B</color>
+    <color name="text_grey">#38647F</color>
+    <color name="text_red">#E82162</color>
+    <color name="text_blue">#1E82D2</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_light_yellow">#F2C010</color>
+    <color name="text_yellow">#FDDC7B</color>
+     background color
+    <color name="main_tab_bg">#00202d</color>
+    <color name="color_bg">#04141a</color>
+    <color name="bg_white">#031B25</color>
+    <color name="bg_light_blue">#379BEC</color>
+    <color name="bg_grey">#EEEEEE</color>
+    <color name="bg_transparent">#00000000</color>
+     separator color
+    <color name="item_separator">#1f3a45</color>-->
+</resources>

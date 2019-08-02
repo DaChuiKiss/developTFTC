@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dp_173"
+                android:src="@mipmap/beijing2" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_46"
+                android:layout_marginTop="@dimen/dp_60"
+                android:layout_marginRight="@dimen/dp_46"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:text="@string/the_total_was"
+                    android:textColor="#ffffffff"
+                    style="@style/font_size_15" />
+
+                <TextView
+                    android:id="@+id/tv_mycenter_costDividend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="0.00"
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:background="@drawable/bg2_style"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_30"
+            android:paddingRight="@dimen/dp_30"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingBottom="@dimen/dp_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mining_rules"
+                android:textColor="#ff666666"
+                style="@style/font_size_13"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15"
+                android:text="@string/mining_rules_1"
+                android:textColor="#ff666666"
+                style="@style/font_size_13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:maxWidth="@dimen/dp_292"
+                android:text="@string/mining_rules_2"
+                android:textColor="#ff666666"
+                style="@style/font_size_13"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="@string/mining_rules_3"
+                android:textColor="#ff666666"
+                android:visibility="gone"
+                style="@style/font_size_13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_mycenter_mining_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_35"
+            android:layout_marginRight="@dimen/dp_15"
+            android:background="@drawable/line_black"
+            android:minHeight="@dimen/dp_45"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp_16"
+            android:paddingBottom="@dimen/dp_16">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mining_date"
+                style="@style/font_size_13"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/mining_cointype"
+                style="@style/font_size_13"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|end"
+                android:text="@string/share_amount"
+                style="@style/font_size_13" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_smart_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_empty_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_65"
+                android:layout_height="@dimen/dp_65"
+                android:layout_marginTop="@dimen/dp_25"
+                android:src="@drawable/img_no_data" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/no_data"
+                android:textColor="@color/text_light"
+                style="@style/font_size_15" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_mycenter_mining_tovip"
+            style="@style/button_shadeless_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_41"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_25"
+            android:layout_marginRight="@dimen/dp_15"
+            android:background="@drawable/bt_style_blue"
+            android:text="@string/open_membership"
+            android:textColor="@color/text_white"
+           />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        基础的订单信息: 交易单价 / 交易数量 / 交易金额
+        使用 merge 标签, 需要放在 LinearLayout 布局中。
+     -->
+
+    <!-- 交易单价 -->
+    <LinearLayout
+        style="@style/common_item_holder_height70"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/otc_item_text"
+            android:text="@string/tx_price" />
+
+        <TextView
+            android:id="@+id/tv_otc_order_price"
+            style="@style/otc_item_value" />
+    </LinearLayout>
+
+    <View style="@style/common_separator_horizontal" />
+
+
+    <!-- 交易数量 -->
+    <LinearLayout
+        style="@style/common_item_holder_height70"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/otc_item_text"
+            android:text="@string/tx_quantity" />
+
+        <TextView
+            android:id="@+id/tv_otc_order_quantity"
+            style="@style/otc_item_value" />
+    </LinearLayout>
+
+    <View style="@style/common_separator_horizontal" />
+
+
+    <!-- 交易金额 -->
+    <LinearLayout
+        style="@style/common_item_holder_height70"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/otc_item_text"
+            android:text="@string/tx_amount" />
+
+        <TextView
+            android:id="@+id/tv_otc_order_amount"
+            style="@style/otc_item_value" />
+    </LinearLayout>
+
+    <View style="@style/common_separator_horizontal" />
+
+
+</merge>

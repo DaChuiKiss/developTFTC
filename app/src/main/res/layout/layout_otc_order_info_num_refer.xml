@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        订单中公共的部分：订单号 / 付款参考号
+        使用 merge 标签, 需要放在 LinearLayout 布局中。
+    -->
+
+    <!-- 订单号 -->
+    <RelativeLayout style="@style/common_item_holder_height70">
+
+        <TextView
+            android:id="@+id/tv_otc_order_number_text"
+            style="@style/otc_item_text"
+            android:text="@string/order_number" />
+
+        <TextView
+            android:id="@+id/tv_otc_order_number"
+            style="@style/otc_item_value"
+            android:layout_below="@id/tv_otc_order_number_text" />
+
+        <ImageView
+            android:id="@+id/iv_otc_order_number_copy"
+            style="@style/otc_copy_icon" />
+    </RelativeLayout>
+
+    <View style="@style/common_separator_horizontal" />
+
+
+    <!-- 付款参考号 -->
+    <RelativeLayout style="@style/common_item_holder_height70">
+
+        <TextView
+            android:id="@+id/tv_otc_order_refer_text"
+            style="@style/otc_item_text"
+            android:text="@string/payment_refer" />
+
+        <TextView
+            android:id="@+id/tv_otc_order_refer"
+            style="@style/otc_item_value"
+            android:layout_below="@id/tv_otc_order_refer_text" />
+
+        <ImageView
+            android:id="@+id/iv_otc_order_refer_copy"
+            style="@style/otc_copy_icon" />
+    </RelativeLayout>
+
+    <View style="@style/common_separator_horizontal" />
+
+
+</merge>

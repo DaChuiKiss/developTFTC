@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="chart_red">#F0395C</color>
+    <color name="chart_green">#37CCB2</color>
+
+    <color name="chart_ma5">#18CCF6</color>
+    <color name="chart_ma10">#FE5EDF</color>
+    <color name="chart_ma20">#E7A520</color>
+    <color name="chart_white">#ffffff</color>
+
+    <color name="chart_background">#ffffff</color>
+    <color name="chart_grid_line">#eeeeee</color>
+    <color name="chart_text">#1E82D2</color>
+    <color name="chart_selector">#c830343C</color>
+    <color name="chart_tab_background">#ffffff</color>
+    <color name="gridLine">#1E82D2</color>
+    <color name="textColor">#ffffff</color>
+    <color name="colorPrimaryDark">#1E82D2</color>
+    <color name="light_gray">#999999</color>
+    <color name="translate">#00000000</color>
+    <color name="bg_white">#ffffff</color>
+    <color name="color_bg">#EFEFF3</color>
+    <color name="text_normal">#333333</color>
+
+   <!-- <color name="colorPrimary">#3F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="chart_red">#F0395C</color>
+    <color name="chart_green">#37CCB2</color>
+
+    <color name="chart_ma5">#18CCF6</color>
+    <color name="chart_ma10">#FE5EDF</color>
+    <color name="chart_ma20">#E7A520</color>
+    <color name="chart_white">#00202d</color>
+
+    <color name="chart_background">#00202d</color>
+    <color name="chart_grid_line">#333333</color>
+    <color name="chart_text">#ffffff</color>
+    <color name="chart_selector">#c830343C</color>
+    <color name="chart_tab_background">#00202d</color>
+    <color name="gridLine">#1E82D2</color>
+    <color name="textColor">#ffffff</color>
+    <color name="colorPrimaryDark">#00202d</color>
+    <color name="light_gray">#334F5B</color>
+    <color name="translate">#00000000</color>
+    <color name="bg_white">#031B25</color>
+    <color name="color_bg">#05181f</color>
+    <color name="text_normal">#F5FFFF</color>-->
+</resources>

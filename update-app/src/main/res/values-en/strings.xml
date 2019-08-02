@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="update2">Update</string>
+    <string name="new_version_size">New version size：</string>
+    <string name="The_version_number">Update version to %s？</string>
+</resources>

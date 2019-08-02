@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sv_my_member"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dp_15"
+        android:paddingEnd="@dimen/dp_15">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200"
+            android:layout_marginTop="@dimen/dp_15"
+            android:background="@drawable/bg_vip_center"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingEnd="@dimen/dp_20">
+
+            <TextView
+                android:id="@+id/tv_my_member_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_22"
+                android:text="@string/vip_hi"
+                android:textColor="@color/text_white"
+                style="@style/font_size_13" />
+
+            <TextView
+                android:id="@+id/tv_my_member_change_benefit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/dp_13"
+                android:text="@string/vip_change_benefit"
+                android:textColor="@color/text_white"
+                style="@style/font_size_13" />
+
+            <TextView
+                android:id="@+id/tv_my_member_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_my_member_name"
+                android:layout_marginTop="@dimen/dp_5"
+                android:maxWidth="@dimen/dp_160"
+                android:text="@string/vip_had_benefited"
+                android:textColor="#82D5F1"
+                style="@style/font_size_13" />
+
+            <TextView
+                android:id="@+id/tv_my_member_deadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_135"
+                android:text="@string/vip_deadline"
+                android:textColor="#82D5F1"
+                style="@style/font_size_13" />
+
+            <TextView
+                android:id="@+id/tv_my_member_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_my_member_deadline"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="@string/vip_recharge_price"
+                android:textColor="@color/text_white"
+                style="@style/font_size_15" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_my_member_purchase"
+            style="@style/button_shadeless_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="@dimen/dp_15"
+            android:background="@drawable/bt_style_blue"
+            android:text="@string/vip_recharge_now"
+            android:textColor="@color/text_white"
+            />
+
+        <TextView
+            android:id="@+id/tv_my_member_benefits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="@string/vip_card_year_benefits"
+            android:textColor="@color/text_light"
+            style="@style/font_size_15" />
+
+
+        <!-- 会员开通状态 -->
+        <RelativeLayout
+            android:id="@+id/rl_my_member_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/ll_my_member_row1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_55"
+                        android:layout_height="@dimen/dp_55"
+                        android:src="@drawable/icon_vip_center_profit_1" />
+
+                    <TextView
+                        android:id="@+id/tv_my_member_benefit1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center"
+                        android:text="@string/vip_benefit_1"
+                        android:textColor="@color/text_grey"
+                        style="@style/font_size_11"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_55"
+                        android:layout_height="@dimen/dp_55"
+                        android:src="@drawable/icon_vip_center_profit_2" />
+
+                    <TextView
+                        android:id="@+id/tv_my_member_benefit2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center"
+                        android:text="@string/vip_benefit_2"
+                        android:textColor="@color/text_grey"
+                        style="@style/font_size_11"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_55"
+                        android:layout_height="@dimen/dp_55"
+                        android:src="@drawable/icon_vip_center_profit_3" />
+
+                    <TextView
+                        android:id="@+id/tv_my_member_benefit3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center"
+                        android:text="@string/vip_benefit_3"
+                        android:textColor="@color/text_grey"
+                        style="@style/font_size_11"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_my_member_row2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_my_member_row1"
+                android:layout_marginTop="@dimen/dp_20"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_55"
+                        android:layout_height="@dimen/dp_55"
+                        android:src="@drawable/icon_vip_center_profit_4" />
+
+                    <TextView
+                        android:id="@+id/tv_my_member_benefit4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center"
+                        android:text="@string/vip_benefit_4"
+                        android:textColor="@color/text_grey"
+                        style="@style/font_size_11"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_55"
+                        android:layout_height="@dimen/dp_55"
+                        android:src="@drawable/icon_vip_center_profit_5" />
+
+                    <TextView
+                        android:id="@+id/tv_my_member_benefit5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center"
+                        android:text="@string/vip_benefit_5_2"
+                        android:textColor="@color/text_grey"
+                        style="@style/font_size_11" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_55"
+                        android:layout_height="@dimen/dp_55"
+                        android:src="@drawable/icon_vip_center_profit_6" />
+
+                    <TextView
+                        android:id="@+id/tv_my_member_benefit6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center"
+                        android:text="@string/vip_benefit_6"
+                        android:textColor="@color/text_grey"
+                        style="@style/font_size_11" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/ll_my_member_row2"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="@dimen/dp_55"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_55"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_vip_or_light_blue" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/vip_benefit_or"
+                        android:textColor="@color/text_blue"
+                        style="@style/font_size_12" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <!-- 未开通状态 -->
+        <RelativeLayout
+            android:id="@+id/rl_my_member_not"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_my_member_not_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_55"
+                        android:layout_height="@dimen/dp_55"
+                        android:src="@drawable/icon_vip_center_profit_1" />
+
+                    <TextView
+                        android:id="@+id/tv_my_member_not_benefit4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="@string/vip_benefit_7"
+                        android:textColor="@color/text_grey"
+                        style="@style/font_size_11" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_55"
+                        android:layout_height="@dimen/dp_55"
+                        android:src="@drawable/icon_vip_center_profit_5" />
+
+                    <TextView
+                        android:id="@+id/tv_my_member_not_benefit5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="@string/vip_benefit_5"
+                        android:textColor="@color/text_grey"
+                        style="@style/font_size_11" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_55"
+                        android:layout_height="@dimen/dp_55"
+                        android:src="@drawable/icon_vip_center_profit_6" />
+
+                    <TextView
+                        android:id="@+id/tv_my_member_not_benefit6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="@string/vip_benefit_6"
+                        android:textColor="@color/text_grey"
+                        style="@style/font_size_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/ll_my_member_not_row"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="@dimen/dp_55"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_55"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_vip_or_light_blue" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/vip_benefit_or"
+                        android:textColor="@color/text_blue"
+                        style="@style/font_size_12" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_my_member_check_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_55"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:text="@string/vip_benefit_check_more"
+            android:textColor="@color/text_grey"
+            style="@style/font_size_12" />
+
+
+    </LinearLayout>
+</ScrollView>

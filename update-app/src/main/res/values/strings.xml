@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="update2">升级</string>
+    <string name="new_version_size">新版本大小：</string>
+    <string name="The_version_number">是否升级到%s版本？</string>
+</resources>

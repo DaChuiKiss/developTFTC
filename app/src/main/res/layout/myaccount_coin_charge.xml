@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity">
+
+   <include layout="@layout/title_bar"></include>
+
+
+   <android.support.design.widget.TabLayout
+       android:id="@+id/tab_layout"
+       android:layout_width="match_parent"
+       app:tabMode="fixed"
+       app:tabTextAppearance="@style/TabTextStyle"
+       android:background="@color/bg_white"
+       app:tabSelectedTextColor="@color/tab_light_text_color_selector"
+       app:tabGravity="fill"
+       app:tabTextColor="@color/text_normal"
+       app:tabIndicatorHeight="@dimen/dp_4"
+       android:layout_height="40dp"/>
+
+   <oysd.com.trade_app.modules.trade.view.NoScrollViewPager
+       android:id="@+id/viewpager"
+       android:layout_marginTop="@dimen/dp_10"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       />
+
+</LinearLayout>

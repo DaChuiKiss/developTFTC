@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 卖家 / 买家 -->
+    <RelativeLayout style="@style/common_item_holder_height70">
+
+        <TextView
+            android:id="@+id/tv_otc_order_seller_buyer_text"
+            style="@style/otc_item_text"
+            android:text="@string/seller" />
+
+        <TextView
+            android:id="@+id/tv_otc_order_seller_buyer"
+            style="@style/otc_item_value"
+            android:layout_below="@id/tv_otc_order_seller_buyer_text" />
+
+        <ImageView
+            android:id="@+id/iv_otc_order_seller_buyer_copy"
+            style="@style/otc_copy_icon" />
+    </RelativeLayout>
+
+    <View style="@style/common_separator_horizontal" />
+
+</merge>

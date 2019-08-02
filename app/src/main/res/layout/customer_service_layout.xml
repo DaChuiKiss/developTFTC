@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff3"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_11"
+        android:background="@color/bg_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:paddingLeft="@dimen/dp_17"
+            android:paddingTop="@dimen/dp_7"
+            android:paddingRight="@dimen/dp_17"
+            android:paddingBottom="@dimen/dp_7">
+
+            <TextView
+                style="@style/font_size_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@mipmap/cs_email"
+                android:drawablePadding="5dp"
+                android:gravity="center|left"
+                android:text="@string/email"
+                android:textColor="#999999" />
+
+            <TextView
+                style="@style/font_size_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center|right"
+                android:text="tftcservice@outlook.com"
+                android:textColor="#CCCCCC" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"
+            android:visibility="gone">
+
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/rl_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_17"
+            android:paddingTop="@dimen/dp_7"
+            android:paddingRight="@dimen/dp_17"
+            android:paddingBottom="@dimen/dp_7"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/font_size_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@mipmap/wechat"
+                android:drawablePadding="5dp"
+                android:gravity="center|left"
+                android:text="@string/wechat"
+                android:textColor="#999999" />
+
+            <TextView
+                style="@style/font_size_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center|right"
+                android:text="1232321"
+                android:textColor="#CCCCCC" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        android:visibility="gone">
+
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/rl_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_11"
+        android:background="@color/bg_white"
+        android:paddingLeft="@dimen/dp_17"
+        android:paddingTop="@dimen/dp_7"
+        android:paddingRight="@dimen/dp_17"
+        android:paddingBottom="@dimen/dp_7"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/font_size_17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@mipmap/telegram"
+            android:drawablePadding="5dp"
+            android:gravity="center|left"
+            android:text="@string/telegram"
+            android:textColor="#999999" />
+
+        <TextView
+            style="@style/font_size_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center|right"
+            android:text="123"
+            android:textColor="#CCCCCC" />
+    </RelativeLayout>
+</LinearLayout>

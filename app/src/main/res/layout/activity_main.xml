@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main_page"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity">
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tab_layout"
+        />
+
+    <oysd.com.trade_app.main.view.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_above="@id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <oysd.com.trade_app.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:background="@drawable/line_top_black"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="50dp"
+       />
+</RelativeLayout>

@@ -1,0 +1,732 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">天富天承</string>
+    <string name="ad_name">首页</string>
+    <string name="trade_name">交易</string>
+    <string name="c2c_name">OTC</string>
+    <string name="mycenter_name">我的</string>
+
+
+    <!-- 首页-->
+    <string name="increaseList">涨幅榜</string>
+
+    <!-- 交易-->
+    <string name="favorites">自选</string>
+    <string name="query_coin">请搜索通证</string>
+    <string name="search">搜索通证</string>
+    <string name="buy">买入</string>
+    <string name="sale">卖出</string>
+
+    <string name="unsettled">未成交</string>
+    <string name="some_clinch_a_deal">部分成交</string>
+    <string name="traded">已成交</string>
+    <string name="revocation">已撤单</string>
+
+    <string name="current">当前委托</string>
+    <string name="history">历史委托</string>
+    <string name="all">全部</string>
+
+    <string name="entrust">明细</string>
+    <string name="detail">成交</string>
+    <string name="timeLine">分时</string>
+    <string name="time5Line">5分</string>
+    <string name="time15Line">15分</string>
+    <string name="time30Line">30分</string>
+    <string name="time60Line">1小时</string>
+    <string name="time4hLine">4小时</string>
+    <string name="timeDayLine">日线</string>
+    <string name="timeWeekLine">周线</string>
+    <string name="tradeLine">交易行情</string>
+
+    <string name="trade_message1">委托价格不能为空</string>
+    <string name="trade_message2">可卖数量不足</string>
+    <string name="trade_message3">数量不能为空</string>
+
+    <!--注册 登录 -->
+    <string name="register">注册</string>
+    <string name="nation">国家</string>
+    <string name="phoneNo">手机号码</string>
+    <string name="email">邮箱</string>
+    <string name="code">获取验证码</string>
+    <string name="code_no">验证码</string>
+    <string name="name">账号  </string>
+    <string name="new_pwd">新密码  </string>
+    <string name="loginPwd">登录密码</string>
+    <string name="configPwd">确认密码</string>
+    <string name="invitationCode">邀请码</string>
+    <string name="emailRegiest">邮箱注册</string>
+    <string name="phoneRegiest">手机注册</string>
+    <string name="alreadyLogin">已有账户，去登录</string>
+    <string name="forgetPwd">忘记密码</string>
+    <string name="noAccount">没有账号，去注册</string>
+    <string name="name_hit">请输入邮箱或者手机号</string>
+    <string name="pwd_hit">请输入6-16位数字字母符号</string>
+    <string name="login">登录</string>
+    <string name="reset">确认重置</string>
+    <string name="next">下一步</string>
+    <string name="back">上一步</string>
+    <string name="configReset">确认重置</string>
+    <string name="phoneEdit">请输入手机号码</string>
+    <string name="emailEdit">请输入邮箱号码</string>
+    <string name="codeEdit">请输入验证码</string>
+    <string name="loginEdit">请输入登录密码</string>
+    <string name="queryEdit">请输入确认密码</string>
+    <string name="inviteEdit">请输入邀请码（非必填）</string>
+
+
+    <!-- base starts -->
+    <string name="network_blocking">网络消化不良</string>
+    <!-- base ends -->
+
+
+    <!-- widget strings starts-->
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_ok">确认</string>
+    <!-- widget strings ends-->
+
+
+    <!-- otc module starts -->
+    <string name="title_otc">OTC</string>
+    <string name="title_unpaid">待付款</string>
+    <string name="title_paid">已付款</string>
+    <string name="title_submit_appeal">提出申诉</string>
+    <string name="title_appealing">申诉中</string>
+    <string name="title_canceled">已取消</string>
+    <string name="title_completed">交易完成</string>
+    <string name="title_payment_method">支付方式</string>
+
+    <string name="publish_ad">发布OTC</string>
+    <string name="update_payment_method">修改支付方式</string>
+    <string name="buy1">购买</string>
+    <string name="sale1">出售</string>
+
+    <!-- publish ad -->
+    <string name="tx_type">交易类型</string>
+    <string name="buy_online">在线购买</string>
+    <string name="sell_online">在线卖出</string>
+    <string name="tx_coin">通证</string>
+    <string name="tx_currency">交易货币</string>
+    <string name="only_price">单价</string>
+    <string name="quantity">数量</string>
+    <string name="tx_min_amount">最小交易数量</string>
+    <string name="tx_max_amount">最大交易数量</string>
+    <string name="tx_method">交易方式</string>
+    <string name="tx_pwd">交易密码</string>
+
+    <string name="hint_keep_2_decimal">保留 2 位小数</string>
+    <string name="hint_keep_x_decimal">保留 %1$d 位小数</string>
+    <string name="hint_at_least">最小</string>
+    <string name="hint_at_most">最大</string>
+    <string name="hint_pls_enter_pwd">请输入交易密码</string>
+    <string name="toast_post_ad_suc">发布广告成功!</string>
+
+    <!-- User payment settings -->
+    <string name="cny_setting">CNY设置</string>
+    <string name="usd_setting">USD设置</string>
+    <string name="weChat">微信</string>
+    <string name="zfb">支付宝</string>
+    <string name="paypal">PayPal</string>
+    <string name="epay">Epay</string>
+
+    <string name="Name">姓名</string>
+    <string name="bank">银行</string>
+    <string name="bank_address">开户地址</string>
+    <string name="bank_card">银行卡号</string>
+    <string name="bank_card_confirm">确认卡号</string>
+    <string name="setting_tx_pwd">交易密码</string>
+    <string name="note">备注</string>
+    <string name="enable">启用</string>
+    <string name="save_bank_setting">保存网银支付设置</string>
+    <string name="setting_goto_otc">已设置好，前往OTC交易</string>
+
+    <string name="net_account">%1$s账户</string>
+    <string name="qr_code">收款码</string>
+    <string name="upload_qr_code">上传收款码</string>
+    <string name="save_net_setting">保存%1$s账号设置</string>
+
+    <string name="bank_name">银行名称</string>
+    <string name="swift">SWIFT</string>
+    <string name="save_usd_setting">保存USD账号设置</string>
+    <string name="username">用户名</string>
+    <string name="net_account_2">%1$s账号</string>
+
+    <string name="hint_name">默认显示，可以修改</string>
+    <string name="hint_bank">请选择银行卡</string>
+    <string name="hint_bank_address">请输入开户地址</string>
+    <string name="hint_bank_card">请输入银行卡号</string>
+    <string name="hint_bank_card_confirm">请再输入一次</string>
+    <string name="hint_setting_tx_pwd">请输入密码</string>
+    <string name="hint_note">请输入备注信息，少于20字</string>
+
+    <string name="hint_net_account">请输入%1$s账号</string>
+    <string name="hint_enter_net_account">请输入账户</string>
+
+    <string name="hint_bank_name">请输入银行名称</string>
+    <string name="hint_swift">请输入SWIFT</string>
+
+    <string name="toast_not_complete">有未完成的内容，是否离开？</string>
+    <string name="toast_add_bank_suc">新增银行卡成功!</string>
+    <string name="toast_update_bank_suc">更新银行卡成功!</string>
+    <string name="toast_update_bank_status_suc">更新银行卡状态成功!</string>
+    <string name="toast_add_account_suc">新增账户成功!</string>
+    <string name="toast_update_account_suc">更新账户成功!</string>
+    <string name="toast_update_account_status_suc">更新账户状态成功!</string>
+    <string name="toast_add_usd_suc">新增usd成功!</string>
+    <string name="toast_update_usd_suc">更新usd成功!</string>
+    <string name="toast_update_usd_status_suc">更新usd状态成功!</string>
+
+    <!-- otc orders -->
+    <string name="tx_price">交易单价</string>
+    <string name="tx_quantity">交易数量</string>
+    <string name="tx_amount">交易金额</string>
+    <string name="tx_fee">手续费</string>
+    <string name="seller">卖家</string>
+    <string name="buyer">买家</string>
+    <string name="payer">付款人</string>
+    <string name="order_time">下单时间</string>
+    <string name="order_number">订单号</string>
+    <string name="payment_refer">付款参考号</string>
+    <string name="payment_method">付款方式</string>
+    <string name="bank_card_info">银行</string>
+    <string name="bank_card_number">银行卡卡号</string>
+    <string name="payment_receiver">收款人</string>
+    <string name="contact_info">联系信息</string>
+
+    <string name="explanation_for_seller">买家已下订单，请耐心等待买家付款，用户确认付款后，平台将会短信邮件提醒您，买家确认付款后，请于24H内放币给买家</string>
+    <string name="explanation_for_buyer">请使用选定好的付款方式进行付款，方便卖家查账，尽快放行数字资产</string>
+    <string name="have_paid_pls_confirm">如您已经向卖家转账付款，请务必点击“已付款”，在付款信息中备注付款参考号以免造成资金损失</string>
+    <string name="cancel_order_pls_confirm">确认取消订单吗?请输入您的用户名</string>
+
+    <string name="cancel_order">取消订单</string>
+    <string name="left_time">已付款，剩余%1$d分%2$d秒</string>
+    <string name="have_paid">已付款</string>
+    <string name="cancel_exchange">取消交易</string>
+    <string name="cancel_appeal">取消申诉</string>
+    <string name="submit_appeal">提出申诉</string>
+    <string name="appeal_immediately">立即申诉</string>
+    <string name="appeal_reason">申诉理由</string>
+    <string name="appeal_evidence">申诉证据 </string>
+    <string name="appeal_evidence_images">(可上传付款截图，最多上传3张)</string>
+    <string name="confirm_appeal">确认申诉</string>
+
+    <string name="account">账号</string>
+    <string name="release">放行</string>
+    <string name="tx_buy_confirm">确认以 %1$s 购买 %2$s?</string>
+    <string name="cancel_appeal_ensure">确认取消申诉</string>
+    <string name="appeal_time">申诉时间</string>
+    <string name="appeal_evidences">申诉凭证</string>
+
+    <string name="price_with_colon">单价：</string>
+    <string name="money_amount">金额</string>
+    <string name="buy_in">买入</string>
+    <string name="pls_enter_buy_or_sell_amount">请输入%1$sMyAwardContract</string>
+    <string name="quantity_with_num_value">数量：%1$s</string>
+    <string name="limit_amount">限额(%1$s)：</string>
+    <string name="limit_amount_2_args">限额(%1$s)：%2$s</string>
+    <string name="actually_buy_or_sell">实际%1$s：%2$s</string>
+    <string name="exchange_total_amount">交易总额：%1$s%2$s</string>
+
+    <string name="toast_order_timeout">订单已超时,无法进行操作!</string>
+    <string name="toast_wrong_username">输入的用户名错误</string>
+    <string name="toast_empty_username">用户名不能为空</string>
+    <string name="toast_cancel_order_suc">取消订单成功!</string>
+    <string name="toast_release_coin_suc">放币成功!</string>
+    <string name="toast_enter_reason">请填写原因和图片</string>
+    <string name="toast_submit_appeal_suc">提交申诉成功!</string>
+    <string name="toast_cancel_appeal_suc">取消申诉成功!</string>
+
+    <string name="err_content_not_empty">内容不能为空</string>
+    <string name="err_card_not_same">卡号不一致</string>
+    <string name="err_remark_less_than_20">备注少于20字</string>
+
+    <string name="notice_have_ordered_pls_pay">您已成功下单，请及时付款</string>
+    <string name="notice_wait_buyer_pay">请等待买家付款</string>
+    <string name="notice_have_paid_wait_release">您已成功付款，请等候卖家放行 %1$s</string>
+    <string name="notice_have_paid_pls_release">买家已经付款，请 24h 放行数字资产</string>
+    <string name="notice_have_appealed_wait">您已申诉 %1$s，客服一日之内将会处理</string>
+    <string name="notice_have_been_appealed">您被 %1$s 申诉，客服一日之内将会处理</string>
+    <string name="notice_exchange_has_canceled">交易已取消</string>
+    <string name="notice_exchange_has_completed">交易已经完成</string>
+
+    <string name="warning_text_warning">交易提醒</string>
+    <string name="warning_text_warm_notice">温馨提示</string>
+    <string name="warning_text_appeal_explanation">1. 提交前请确认提交的申诉证据的有效性，提及后，客服会及时根据您的申诉材料进行评估判定\n
+        2. 只能申诉一次，不能多次提交申诉\n
+        3. 申诉后，请耐心等待，如果确认买家已付款，客服将会自动放行数字资产，如果作假，将会影响申诉方的信用记录，平台将会解冻卖家的数字资产
+    </string>
+    <string name="warning_text_explanation">持币一方视为卖家，出钱一方视为买家。以下作为双方的统称</string>
+    <string name="warning_text_exchange">1. 买家汇款将直接进入卖家账户，交易过程中卖家出售的数字资产由平台托管\n
+        2. 买家请在规定时间内完成付款，请务必点击“已付款”，卖家确认收款后，系统会将数字资产划到您的账户\n
+        3. 买家超过 15Min 未付款或者未点击“已付款”，订单会因超时而超时取消，造成的损失将由买家自主承担\n
+        4. 如果 24H 还未收到数字资产，请在平台提出申诉，客服将会在一日内进行处理；如果买家确实付款，平台将会将数字资产发放给买家，如果经查实恶意申诉，严重将会封锁该平台的账号\n
+        5. 只有一次申诉机会，请谨慎提交申诉资料，申诉方才有取消申诉的权利\n
+        6. 买家可以取消交易，但是如果当日取消订单达 3 次，将会限制当日购买功能
+    </string>
+
+    <string name="allIn">全部买入</string>
+    <string name="otc_order_type1">全部</string>
+    <string name="otc_order_type2">待付款</string>
+    <string name="otc_order_type3">待放币</string>
+    <string name="otc_order_type4">已完成</string>
+    <string name="otc_order_type5">已取消</string>
+    <string name="otc_order_type6">申诉中</string>
+    <!-- otc module ends -->
+
+
+    <!--个人中心 -->
+    <string name="ads">新鲜资讯</string>
+    <string name="adsMore">更多</string>
+    <string name="buyPrice">委托价格</string>
+    <string name="buyAccount">委托数量</string>
+    <string name="type1">我的OTC</string>
+    <string name="type2">我的账户</string>
+    <string name="type3">我的订单</string>
+    <string name="type4">我的邀请</string>
+    <string name="type5">身份认证</string>
+    <string name="type6">安全中心</string>
+    <string name="type7">客服中心</string>
+    <string name="type8">系统设置</string>
+    <string name="type9">新手指南</string>
+    <string name="agreement">我已阅读并同意</string>
+    <string name="title_pattern_setting">设置手势密码</string>
+    <string name="title_pattern_checking">验证手势密码</string>
+    <string name="safe_phone">手机</string>
+    <string name="safe_email">邮箱</string>
+    <string name="safe_google">谷歌认证</string>
+    <string name="safe_login_pwd">登录密码</string>
+    <string name="safe_amount_pwd">交易密码</string>
+    <string name="safe_patternLocker">手势密码</string>
+    <string name="trade_pwd">交易密码</string>
+    <string name="ad_title_l_1">充值</string>
+    <string name="ad_title_l_2">充值即送大礼</string>
+    <string name="ad_title_r_1">交易攻略</string>
+    <string name="ad_title_r_2">助你进入最6玩家</string>
+    <string name="title_text">链卡权益上新</string>
+    <string name="total_account">总资产折合:</string>
+    <string name="deposit">充值</string>
+    <string name="withdraw">提现</string>
+    <string name="transfer">划转</string>
+    <string name="transfers_between">互转</string>
+    <string name="exchange_account">通证账户</string>
+    <string name="otc_account">OTC账户</string>
+    <string name="voucher_account">凭证账户</string>
+    <string name="compartment">分红</string>
+    <string name="currency">通证</string>
+    <string name="amount">总量</string>
+    <string name="available">可用</string>
+    <string name="locked">冻结</string>
+    <string name="turnover">交易额</string>
+    <string name="estimates">估值（USD）</string>
+    <string name="deposit_address">充值地址</string>
+    <string name="ld1">1.请仔细核对充值地址</string>
+    <string name="ld2">地址只能充值</string>
+    <string name="ld3">资产，任何充入</string>
+    <string name="ld4">地址的非</string>
+    <string name="ld5">资产将不可找回</string>
+
+    <!--个人中心 - 我的会员 starts -->
+    <string name="vip_hi">Hi,%1$s</string>
+    <string name="vip_change_benefit">更改权益</string>
+    <string name="vip_had_benefited">您已尊享%1$s会员大权益</string>
+    <string name="vip_not_benefited">您尚不能享受高级会员权益</string>
+    <string name="vip_deadline">%1$s到期</string>
+    <string name="vip_recharge_price">续费 %1$s</string>
+    <string name="vip_purchase_cheap">特惠价 %1$s</string>
+    <string name="vip_recharge_now">立即续费</string>
+    <string name="vip_purchase_now">立即开通会员</string>
+    <string name="vip_vip_benefits">会员权益</string>
+    <string name="vip_card_year_benefits">年卡权益</string>
+    <string name="vip_card_month_benefits">月卡权益</string>
+    <string name="vip_card_season_benefits">季卡权益</string>
+    <string name="vip_card_lifelong_benefits">终生卡权益</string>
+    <string name="vip_benefit_1">币数量%1$d</string>
+    <string name="vip_benefit_2">初始释放%1$d%%</string>
+    <string name="vip_benefit_3">每月释放%1$d%%</string>
+    <string name="vip_benefit_3_without_args">每月释放</string>
+    <string name="vip_benefit_4">享分红资格</string>
+    <string name="vip_benefit_5">手续费减%1$d%%</string>
+    <string name="vip_benefit_5_1">手续费全免</string>
+    <string name="vip_benefit_5_2">手续费减免</string>
+    <string name="vip_benefit_6">交易挖矿</string>
+    <string name="vip_benefit_or">或</string>
+    <string name="vip_benefit_7">送平台币</string>
+    <string name="vip_benefit_check_more">查看更多会员等级</string>
+
+    <string name="vip_congratulations">恭喜你已经成为%1$s</string>
+    <string name="vip_choose_benefit_in_2">请选择您的权益形式（二选一）</string>
+    <string name="vip_free_service">免手续费</string>
+    <string name="vip_benefit_explanation">权益说明</string>
+    <string name="vip_dig_explanation">交易挖矿：每笔交易可得MVS奖励</string>
+    <string name="vip_free_service_explanation">免手续费：交易手续费折扣</string>
+
+    <string name="vip_current_benefits">当前权益</string>
+    <string name="vip_submit_price">确认支付 %1$sUSDT</string>
+    <string name="vip_ensure_agreement">支付即同意《会员协议》</string>
+    <string name="vip_ensure_agreement_sel">《会员协议》</string>
+    <string name="vip_card_period">有效期限</string>
+    <string name="vip_card_month">月卡</string>
+    <string name="vip_card_season">季卡</string>
+    <string name="vip_card_year">年卡</string>
+    <string name="vip_card_lifelong">终生卡</string>
+    <string name="vip_member">会员</string>
+    <string name="vip_card_month_price_unit">USDT/月</string>
+    <string name="vip_card_season_price_unit">USDT/季度</string>
+    <string name="vip_card_year_price_unit">USDT/年</string>
+
+    <string name="popup_select_vip_level">选择会员等级</string>
+    <string name="popup_various_payments">多样化的支付方式，等额%1$sUSDT</string>
+    <string name="popup_confirm_payment">确认支付</string>
+
+    <string name="dialog_payment_title">会员支付</string>
+    <string name="dialog_payment_content">请输入您的交易密码,从钱包余额扣除</string>
+
+    <string name="toast_recharge_success">会员续费成功!</string>
+    <string name="toast_purchase_success">购买会员卡成功!</string>
+    <string name="toast_benefit_not_changed">权益没有更改!</string>
+    <string name="toast_change_benefit_success">更换权益成功!</string>
+
+    <string name="title_member_center">会员中心</string>
+
+    <!--个人中心 - 我的会员 ends -->
+
+
+    <string name="withdraw_address">提现地址</string>
+    <string name="withdraw_account">提现数量</string>
+    <string name="withdraw_surplus">剩余可提</string>
+    <string name="service_charge">手续费  </string>
+    <string name="withdraw_request">申请提现</string>
+    <string name="withdraw_warm1">1.请仔细核对提现地址</string>
+    <string name="withdraw_warm2">2.平台转出后具体到账时间以区块浏览器确认数为准，如果区块浏览器拥堵，可能会导致迟迟无法到账</string>
+    <string name="transfer_submit">确认转出</string>
+    <string name="transfer_count">转出数量</string>
+    <string name="transfer_pwd">交易密码</string>
+    <string name="transfer_warm">将该数字资产转到对应的OTC账户，若需要，可从OTC账户转出到通证账户，内部转账不收手续费</string>
+    <string name="transfer_warm2">到账数量以USDT价格进行划转</string>
+    <string name="market_position">盘口</string>
+    <string name="price">委托价格</string>
+    <string name="price2">价格</string>
+    <string name="count">数量</string>
+    <string name="all_revoke">全部撤销</string>
+    <string name="add_optional">添加自选</string>
+    <string name="order_coin">通证订单</string>
+    <string name="order_otc">OTC订单</string>
+    <string name="system1">联系我们</string>
+    <string name="system2">隐私政策</string>
+    <string name="system3">用户协议</string>
+    <string name="system4">语言</string>
+    <string name="system5">清除缓存</string>
+    <string name="system6">换算货币</string>
+    <string name="system7">检查更新</string>
+    <string name="logout">退出登录</string>
+    <string name="my1">实名认证</string>
+    <string name="my2">姓名</string>
+    <string name="my3">账号</string>
+    <string name="my4">国家</string>
+    <string name="my5">证件号码</string>
+    <string name="my6">高级认证</string>
+    <string name="advanced_audit">高级审核</string>
+    <string name="audit">审核</string>
+    <string name="belongCity">所在国家</string>
+    <string name="realyName">真实姓名</string>
+    <string name="certificateType">证件类型</string>
+    <string name="certificateNo">证件号码</string>
+    <string name="cert_positive">证件正面</string>
+    <string name="cert_opposite">证件反面</string>
+    <string name="cert_handID"> 持有ID+手写用户ID</string>
+    <string name="cert_other">其他</string>
+    <string name="text1">照片要求：JPG/PN格式，大小不超过3M,照片清晰</string>
+    <string name="or">以下错误可能导致审核失败</string>
+    <string name="or1">1. 证件过期或者上传照片模糊</string>
+    <string name="or2"> 2.填写的证件ID,姓名与实际信息不一致</string>
+    <string name="or3">  3.手持照缺用户ID,ID错误，不清晰，或者ID 非手写</string>
+    <string name="or4">高级认证后，才可以提现或者单笔超过2000的交易</string>
+    <string name="submit">提交</string>
+    <string name="message">审批将于一个工作天内完成</string>
+    <string name="my7">1. 实名认证后才可进行高级验证</string>
+    <string name="my8">2.高级认证后，才可以提现或者OTC单笔超过2k 的交易</string>
+    <string name="wechat">微信群</string>
+    <string name="telegram">电报群</string>
+    <string name="cancel">取消</string>
+    <string name="bind">绑定</string>
+    <string name="backBt">返回</string>
+    <string name="old_login_pwd">原登录密码</string>
+    <string name="new_login_pwd">新登录密码</string>
+    <string name="config_login_pwd">确认密码</string>
+    <string name="update">修改</string>
+    <string name="certNo">身份证号码</string>
+    <string name="certNo_hit">请输入身份证号码</string>
+    <string name="accountNo">新交易密码</string>
+    <string name="againPutPwd">再次输入密码</string>
+    <string name="notice">修改交易密码24h不能提现和充值</string>
+    <string name="notice2">请妥善备份秘钥以防丢失</string>
+    <string name="notice3">二维码截图到手机或者复制秘钥到剪贴板可能会有安全风险，请妥善保管</string>
+    <string name="notice4">绑定谷歌身份认证器</string>
+    <string name="notice5">谷歌验证器丢失</string>
+    <string name="notice6">请联系客服</string>
+    <string name="copy">复制</string>
+    <string name="error_text_null">内容不能为空</string>
+    <string name="error_text_exceed">可用数量不够划转数量，不能划转 !</string>
+    <string name="error_text_length">长度必须为6</string>
+    <string name="error_text_limit50">请输入少于50位字符</string>
+    <string name="error_text_limit6_16">请使用6-16位的字母和数字组合</string>
+    <string name="error_text_format">输入的格式错误</string>
+    <string name="error_text_inconsistent_password">两次密码不一致</string>
+    <string name="error_text_numAndWord">请使用6位字符的数字或者字母</string>
+    <string name="config">确认</string>
+    <string name="realName">请输入真实姓名</string>
+    <string name="message1">登录成功</string>
+    <string name="message2">登录失败</string>
+    <string name="message3">注册成功</string>
+    <string name="message4">注册失败</string>
+    <string name="message5">验证码发送成功</string>
+    <string name="message6">验证码发送失败</string>
+    <string name="message7">设置成功</string>
+    <string name="message8">设置失败</string>
+    <string name="message9">实名认证成功</string>
+    <string name="message10">实名认证失败</string>
+    <string name="message11">请先进行实名认证</string>
+    <string name="message15">提现申请成功</string>
+
+    <string name="message12">绑定成功</string>
+    <string name="message13">修改成功</string>
+    <string name="message14">设置成功</string>
+    <string name="permission_request_denied">请授权访问存储空间权限，否则无法上传图片</string>
+    <string name="error_gif">长宽至少要大于一像素和图片大小不能超过1兆</string>
+    <string name="auth_no">未认证</string>
+    <string name="auth_ok">已认证</string>
+    <string name="auth_ing">审核中</string>
+    <string name="auth_fail">审核失败</string>
+    <string name="auth_success">审核成功</string>
+    <string name="auth_cert_type1">身份证</string>
+    <string name="auth_cert_type2">军官证</string>
+    <string name="auth_cert_type3">驾驶证</string>
+    <string name="auth_cert_type4">护照</string>
+    <string name="nation_default">中国(+86)</string>
+    <string name="ad_type">类型</string>
+    <string name="coin_type">通证</string>
+    <string name="coin_price">单价</string>
+    <string name="status">状态</string>
+    <string name="online">上架</string>
+    <string name="offline">下架</string>
+    <string name="delete">删除</string>
+    <string name="compartment_1">显示分红返佣记录,数字资产币币账号中</string>
+    <string name="compartment_2">总佣金(BTC)</string>
+    <string name="compartment_3">最近返佣(BTC)</string>
+    <string name="handPwdMessage">绘制解锁图案</string>
+    <string name="isExist_no">输入的用户名不存在</string>
+    <string name="isExist_yes">输入的用户名已存在</string>
+    <!-- -->
+    <string name="bindEmail">邮箱绑定</string>
+    <string name="bindGoogle">谷歌认证</string>
+    <string name="bindPhone">手机绑定</string>
+    <string name="resetPwd">找回密码</string>
+    <string name="findPwd">找回密码</string>
+    <string name="pleaseChouseCountry">请选择国家和地区</string>
+    <string name="c2cToCoin">划转到通证账户</string>
+    <string name="language">语言选择</string>
+    <string name="updateAccountPwd">修改交易密码</string>
+    <string name="updateLoginPwd">修改登录密码</string>
+    <string name="chinese">简体中文</string>
+    <string name="english">English</string>
+    <string name="selectLanguage">语言选择</string>
+
+    <string name="selectCard">证件选择</string>
+    <string name="selectCoinType">货币选择</string>
+
+    <string name="unbind">未绑定</string>
+    <string name="binded">已绑定</string>
+    <string name="goto_update">去修改</string>
+
+    <string name="orderItem1">委托价</string>
+    <string name="orderItem2">委托数量</string>
+    <string name="orderItem3">实际成交</string>
+    <string name="orderItem4">操作</string>
+    <string name="orderItem5">数量</string>
+    <string name="revoke">撤销</string>
+
+    <string name="entrustStatus_1">未交易</string>
+    <string name="entrustStatus_2">部分成交</string>
+    <string name="entrustStatus_3">已成交</string>
+    <string name="entrustStatus_4">已撤销</string>
+
+    <string name="takeInMinValue">最小提现数量</string>
+
+    <string name="gotoLogin">忘记手势，账号登录</string>
+    <string name="mv">《天富天承用户服务协议》</string>
+    <string name="mvTitle">用户协议</string>
+    <string name="mvIsOk">请先勾选天富天承协议</string>
+
+    <string name="dialogMsg1">输入交易密码</string>
+
+    <string name="dialogMsg2">确认提现地址正确，进行提现?</string>
+
+    <string name="dialogMsg3">是否进行全部撤销?</string>
+
+    <string name="dialogMsg4">是否撤销?</string>
+    <string name="dialogMsg5">是否进行划转?</string>
+    <string name="dialogMsg6">清除缓存数据?</string>
+    <string name="dialogMsg7">是否删除这条广告信息？</string>
+
+    <string name="Cancle">取消</string>
+    <string name="OK">确认</string>
+    <string name="withdrawAddress">请输入提现地址</string>
+    <string name="edit_transfer">请输入数量</string>
+    <string name="with_draw_amount_edit">最小提现数量</string>
+    <string name="Total_funds">总资产（USDT）</string>
+    <string name="transfer_warm_1">将该数字资产划转到对应数字资产的通证账户，若需要，可从通证账户转出到OTC账户，内部划转不收手续费</string>
+    <string name="transfer_warm_2">将该数字资产划转到对应币种的通证账户，内部划转不需要手续费</string>
+    <string name="up">高</string>
+    <string name="down">低</string>
+
+
+    <string name="trade_pwd_hit">请输入交易密码</string>
+
+    <string name="copySuccess">复制成功</string>
+    <string name="time">时间</string>
+    <string name="type">方向</string>
+    <string name="gesture_setting">请再次绘制解锁图案</string>
+    <string name="gesture_setting_2">手势解锁图案设置成功！</string>
+    <string name="gesture_success">解锁成功！</string>
+    <string name="gestrue_setting_3">与上次绘制不一致，请重新绘制</string>
+    <string name="gestrue_setting_4">绘制点太少，请重新绘制</string>
+    <string name="gestrue_setting_5">密码绘制错误</string>
+    <string name="the_new_app">已经是最新版本</string>
+    <string name="system_error">系统出错</string>
+    <string name="take_value">提现数量</string>
+    <string name="menu">开启体验</string>
+    <string name="Jump">跳过</string>
+    <string name="no_data">亲，暂时没有数据哦！</string>
+    <string name="go_explore">去逛逛</string>
+    <string name="return_3_seconds">3秒后返回首页</string>
+    <string name="no_order">亲，暂时没有订单哦！</string>
+    <string name="no_net">请检查您的手机是否联网</string>
+    <string name="loading">重新加载</string>
+    <string name="message16">上传成功</string>
+    <string name="add_optional_success">添加自选成功</string>
+    <string name="entry_orders_success">挂单成功</string>
+    <string name="create_time">委托时间：</string>
+    <string name="average_valence">成交均价</string>
+    <string name="volume">成交量</string>
+    <string name="turnover_price">成交额</string>
+
+    <!-- smart refresh header -->
+    <string name="refresh_header_pull_down">下拉可以刷新</string>
+    <string name="refresh_header_refreshing">正在刷新&#8230;</string>
+    <string name="refresh_header_loading">正在加载&#8230;</string>
+    <string name="refresh_header_release">释放立即刷新</string>
+    <string name="refresh_header_finish">刷新完成</string>
+    <string name="refresh_header_failed">刷新失败</string>
+    <string name="refresh_header_last_time">上次更新 M-d HH:mm</string>
+    <string name="refresh_header_second_floor">释放进入二楼</string>
+
+    <!-- smart refresh footer -->
+    <string name="refresh_footer_pull_up">上拉加载更多</string>
+    <string name="refresh_footer_release">释放立即加载</string>
+    <string name="refresh_footer_loading">正在加载&#8230;</string>
+    <string name="refresh_footer_refreshing">正在刷新&#8230;</string>
+    <string name="refresh_footer_finish">加载完成</string>
+    <string name="refresh_footer_failed">加载失败</string>
+    <string name="refresh_footer_all_loaded">没有更多数据了</string>
+
+    <string name="clear_cache">缓存清除成功</string>
+    <string name="real_card_no">请输入证件号码</string>
+    <string name="click_again">再按一次退出程序</string>
+    <string name="goto_settting">去设置</string>
+    <string name="compartment_refund">返佣</string>
+    <string name="mining">挖矿</string>
+    <string name="trade_dividends">持有分红</string>
+    <string name="my_income">我的收益</string>
+    <string name="commission_rules">返佣细则</string>
+    <string name="commission_rules_1">实名注册即送288枚MVS，邀请好友奖励188枚MVS</string>
+    <string name="commission_rules_2">更可享好友交易手续费分红</string>
+    <string name="the_total_was">已获总额</string>
+    <string name="mining_rules">挖矿细则</string>
+    <string name="mining_rules_1">所有用户皆可参与交易挖矿，平台每日统计用户当天产生的交易手续费，按统计时段的MVS均价，将交易手续费100%折算为MVS并于次日发放至用户币币账户</string>
+    <string name="mining_rules_2">MVS均价=统计时段内平台MVS总成交额/统计时段内平台MVS总成交量</string>
+    <string name="mining_rules_3">每天统计发放一次</string>
+    <string name="mining_date">日期</string>
+    <string name="mining_cointype">通证</string>
+    <string name="share_amount">分红额</string>
+    <string name="share_total_amount">分红总额</string>
+    <string name="trade_dividends_rules">分红细则</string>
+    <string name="trade_dividends_rules_1">基础分红和权益分红：</string>
+    <string name="trade_dividends_rules_2">1.权益分红：所有用户交易量达到10万USDT以上可获得权益分红资格</string>
+    <string name="trade_dividends_rules_3">2.基础分红：成为VIP会员即拥有基础分红资格</string>
+    <string name="trade_dividends_rules_4">拥有权益分红资格和基础分红资格可获得平台交易手续费分红,每持有10000个MVS为一个分红权,零头不计算在内</string>
+    <string name="trade_dividends_rules_5">计算公式:平台每日交易手续费的40%÷分红权(基础+权益分红资格会员的分红权)=每日分红数</string>
+    <string name="vip_center">会员中心</string>
+    <string name="otc_price">单价</string>
+    <string name="otc_count">数量</string>
+    <string name="otc_amount">交易金额</string>
+    <string name="loseDate">到期</string>
+    <string name="old_trade_pwd">原交易密码</string>
+    <string name="open_vip">去开通</string>
+    <string name="hot_message">热点速递</string>
+    <string name="vip">会员</string>
+    <string name="home_message">资讯</string>
+    <string name="home_app">应用</string>
+    <string name="wait">敬请期待</string>
+    <string name="information_note">正在马不停蹄的开发中</string>
+    <string name="gift">空投奖励</string>
+    <string name="wealth_money">投资理财</string>
+    <string name="up_coin">上币投股</string>
+    <string name="open_membership">开通会员</string>
+    <string name="Lifetime">终生会员</string>
+    <string name="limit">限额</string>
+    <string name="return2">返回首页</string>
+
+    <string name="toast_proxy">设备通过代理连接，请注意资金安全！</string>
+    <string name="toast_root">设备已经root，请注意资金安全！</string>
+    <string name="home_bonus">我的邀请</string>
+    <string name="web_error">加载异常</string>
+    <string name="my_award">我的奖励</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="usable">可用</string>
+    <string name="freeze">冻结</string>
+    <string name="total">总计</string>
+    <string name="wallet_address">钱包地址:</string>
+    <string name="transfer_to_pass_card_account">划转到通证账户</string>
+    <string name="the_cumulative_invited">累计邀请</string>
+    <string name="person">人</string>
+    <string name="activity_rules">活动细则</string>
+    <string name="invitation_code">邀请码：</string>
+    <string name="recommended_links">推荐链接：</string>
+    <string name="my_invitation_1">1、好友接受邀请后，OTC订单每产生一笔真实交易，会产生相应比例的奖励。</string>
+    <string name="my_invitation_2">2、奖励的形式以USDT或ACN的形式奖励到您的OTC账户。</string>
+    <string name="my_invitation_3">3、平台将以每天晚上11：30结算一次奖励获得情况，并一次性奖励到您的账户，奖励金额以实际金额为准。</string>
+    <string name="my_invitation_4">4、仅OTC交易单参与活动，其他交易不参与该活动。</string>
+    <string name="my_invitation_5">5、如被邀请人违反邀请奖励的相应风控规则，其手续费将不能返还给邀请人，同时邀请人与被邀请人将面临封号的风险。</string>
+    <string name="my_invitation_6">活动如有调整，以天富天承交易平台更新为准，最终解释权归天富天承交易平台所有。</string>
+    <string name="my_invitation_7">注：邀请者累计可得好友30单OTC交易奖励。</string>
+    <string name="awarded">已获得奖励：</string>
+    <string name="Invitee_s_account_number">被邀请人账号</string>
+    <string name="trading_hour">交易时间</string>
+    <string name="reward_type">奖励类型</string>
+    <string name="amount_of_bonus">奖励金额</string>
+    <string name="home_name">名称</string>
+    <string name="the_latest_price">最新价</string>
+    <string name="price_limit">涨跌幅</string>
+
+    <string name="cut_by">由</string>
+    <string name="cut_conversion_become">划转为</string>
+    <string name="cut_cut">切换</string>
+    <string name="cut_account_balance">账户余额:</string>
+    <string name="cut_all_conversion">全部划转</string>
+    <string name="cut_transfer_number">划转数量</string>
+    <string name="cut_please_enter_the_number_of_paddles">请输入划转数量</string>
+    <string name="cut_transfer_conversion">划转换算</string>
+    <string name="cut_please_enter_transfer_conversion">请输入划转换算</string>
+    <string name="transfer_between_currencies_in_the_pass_through_account">通证账户内币种间互转</string>
+    <string name="transfer_transfer_prompt">划转数量大于账户余额</string>
+
+
+    <string name="select_the_currency">选择币种</string>
+
+
+</resources>
+
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 付款方式 -->
+    <RelativeLayout style="@style/common_item_holder_height70">
+
+        <TextView
+            style="@style/otc_item_text"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dp_0"
+            android:text="@string/payment_method" />
+
+        <TextView
+            android:id="@+id/otc_order_payment_method"
+            style="@style/otc_item_value"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dp_0" />
+    </RelativeLayout>
+
+    <View style="@style/common_separator_horizontal" />
+
+</merge>

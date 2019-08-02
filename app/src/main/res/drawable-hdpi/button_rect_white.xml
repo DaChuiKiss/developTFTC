@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- 边框 -->
+<item>
+    <shape >
+        <!-- 通过pading指定边线有无和宽度 -->
+        <padding
+            android:top="1dp"
+            />
+        <solid
+            android:color="#eeeeee"
+            />
+        <corners android:bottomLeftRadius="@dimen/dp_10"/>
+    </shape>
+</item>
+
+<!-- 主体 -->
+<item>
+    <shape >
+        <solid
+            android:color="#ffffff"
+            />
+        <corners android:bottomLeftRadius="@dimen/dp_10"/>
+    </shape>
+</item>
+
+</layer-list>

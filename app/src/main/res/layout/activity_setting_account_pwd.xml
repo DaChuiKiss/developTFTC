@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical"
+    tools:context=".main.MainActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        style="@style/marge_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_68">
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_height="match_parent"
+            android:text="@string/safe_amount_pwd" />
+
+        <EditText
+            android:id="@+id/et_mycenter_setting_accountpwd"
+            style="@style/EditTextStyle"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="@string/pwd_hit"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_mycenter_setting_accountpwd_error"
+        style="@style/error_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        style="@style/marge_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_height="match_parent"
+            android:text="@string/configPwd" />
+
+        <EditText
+            android:id="@+id/et_mycenter_setting_accountconfigpwd"
+            style="@style/EditTextStyle"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/pwd_hit"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_mycenter_setting_accountconfigpwd_error"
+        style="@style/error_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_mycenter_setting_accountpwd"
+        style="@style/button_shadeless_style"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_48"
+        android:layout_marginRight="@dimen/dp_15"
+        android:background="@drawable/bt_style_blue"
+        android:text="@string/config"
+        android:textColor="@color/text_white"
+        />
+
+
+</LinearLayout>

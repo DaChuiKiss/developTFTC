@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/dp_22"
+                android:src="@mipmap/cert2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_7"
+                android:paddingBottom="@dimen/dp_18">
+
+                <TextView
+                    style="@style/font_size_14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/my1"
+                    android:textColor="@color/text_blue" />
+
+                <TextView
+                    style="@style/font_size_14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/advanced_audit"
+                    android:textColor="@color/text_blue" />
+
+                <TextView
+                    style="@style/font_size_14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/audit"
+                    android:textColor="@color/text_grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_15"
+                android:paddingBottom="@dimen/dp_18">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_image1"
+                        android:layout_width="@dimen/dp_155"
+                        android:layout_height="@dimen/dp_102"
+                        android:background="@drawable/rect_borders_e6e6e6"
+                        android:gravity="center"
+                        android:minWidth="@dimen/dp_155"
+                        android:minHeight="@dimen/dp_102">
+
+                        <ImageView
+                            android:id="@+id/certImage1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/add_photo" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/certText1"
+                        style="@style/font_size_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center"
+                        android:text="@string/cert_positive" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_image3"
+                        android:layout_width="@dimen/dp_155"
+                        android:layout_height="@dimen/dp_102"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:background="@drawable/rect_borders_e6e6e6"
+                        android:gravity="center"
+                        android:minWidth="@dimen/dp_155"
+                        android:minHeight="@dimen/dp_102">
+
+                        <ImageView
+                            android:id="@+id/certImage3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/add_photo" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/certText3"
+                        style="@style/font_size_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center"
+                        android:text="@string/cert_handID" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_image2"
+                        android:layout_width="@dimen/dp_155"
+                        android:layout_height="@dimen/dp_102"
+                        android:background="@drawable/rect_borders_e6e6e6"
+                        android:gravity="center"
+                        android:minWidth="@dimen/dp_155"
+                        android:minHeight="@dimen/dp_102">
+
+                        <ImageView
+                            android:id="@+id/certImage2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/certImage1"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/add_photo" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/certText2"
+                        style="@style/font_size_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center"
+                        android:text="@string/cert_opposite" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_image4"
+                        android:layout_width="@dimen/dp_155"
+                        android:layout_height="@dimen/dp_102"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:background="@drawable/rect_borders_e6e6e6"
+                        android:gravity="center"
+                        android:minWidth="@dimen/dp_155"
+                        android:minHeight="@dimen/dp_102">
+
+                        <ImageView
+                            android:id="@+id/certImage4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/add_photo" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/certText4"
+                        style="@style/font_size_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center"
+                        android:text="@string/cert_other" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_15"
+                android:background="@color/item_separator" />
+
+            <TextView
+                style="@style/font_size_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_30"
+                android:gravity="center_vertical"
+                android:text="@string/text1"
+                android:textColor="@color/text_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_14"
+                android:background="@drawable/rect_borders_e6e6e6"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_16">
+
+
+                <TextView
+                    style="@style/font_size_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_17"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:gravity="center_vertical"
+                    android:text="@string/or"
+                    android:textColor="@color/text_light" />
+
+                <TextView
+                    style="@style/font_size_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_17"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="@string/or1"
+                    android:textColor="@color/text_light" />
+
+                <TextView
+                    style="@style/font_size_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_17"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="@string/or2"
+                    android:textColor="@color/text_light" />
+
+                <TextView
+                    style="@style/font_size_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_17"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="@string/or3"
+                    android:textColor="@color/text_light" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit_id"
+                style="@style/button_shadeless_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_36"
+                android:layout_marginRight="@dimen/dp_15"
+                android:layout_marginBottom="@dimen/dp_22"
+                android:background="@drawable/bt_style_blue"
+                android:minHeight="@dimen/dp_41"
+                android:text="@string/submit"
+                android:textColor="@color/text_white"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

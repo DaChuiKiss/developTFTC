@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_75"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/dp_25">
+
+        <TextView
+            style="@style/font_size_17"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/title_otc"
+            android:textColor="@color/text_white" />
+
+        <TextView
+            android:id="@+id/tv_otc_publish_ad"
+            style="@style/font_size_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableStart="@mipmap/send_ads"
+            android:padding="@dimen/dp_5"
+            android:text="@string/publish_ad"
+            android:textColor="@color/text_white" />
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/bg_white"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="@dimen/dp_4"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/text_blue"
+        app:tabTextAppearance="@style/CustomTabLayoutTextAppearance" />
+
+    <oysd.com.trade_app.modules.trade.view.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/bg_white" />
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 不是任何界面的布局,只是其它布局的 copy source. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15">
+
+        <include layout="@layout/layout_otc_order_info_basic" />
+
+        <!-- 手续费 -->
+        <LinearLayout
+            style="@style/common_item_holder_height70"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/otc_item_text"
+                android:text="@string/tx_fee" />
+
+            <TextView
+                android:id="@+id/tv_otc_order_transaction_fee"
+                style="@style/otc_item_value"
+                android:text="10USDT" />
+        </LinearLayout>
+
+        <View style="@style/common_separator_horizontal" />
+
+
+        <!-- 卖家 / 买家 -->
+        <RelativeLayout style="@style/common_item_holder_height70">
+
+            <TextView
+                android:id="@+id/tv_otc_order_seller_buyer_text"
+                style="@style/otc_item_text"
+                android:text="@string/seller" />
+
+            <TextView
+                android:id="@+id/tv_otc_order_seller_buyer"
+                style="@style/otc_item_value"
+                android:layout_below="@id/tv_otc_order_seller_buyer_text"
+                android:text="阿拉斯加" />
+
+            <ImageView
+                android:id="@+id/iv_otc_order_seller_buyer_copy"
+                style="@style/otc_copy_icon" />
+        </RelativeLayout>
+
+        <View style="@style/common_separator_horizontal" />
+
+        <!-- 下单时间 -->
+        <include layout="@layout/layout_otc_order_time" />
+
+        <!-- 付款方式 -->
+        <include layout="@layout/layout_otc_order_payment_method" />
+
+        <include layout="@layout/layout_otc_order_info_num_refer" />
+
+
+    </LinearLayout>
+</ScrollView>

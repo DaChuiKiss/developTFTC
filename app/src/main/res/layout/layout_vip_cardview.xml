@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_vip_card"
+    android:layout_width="@dimen/dp_315"
+    android:layout_height="@dimen/dp_160"
+    app:cardCornerRadius="@dimen/dp_10"
+    app:cardElevation="@dimen/dp_10">
+
+    <LinearLayout
+        android:id="@+id/ll_vip_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_vip_lifelong"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dp_25">
+
+        <TextView
+            android:id="@+id/tv_vip_card_type"
+            style="@style/font_size_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_22"
+            android:textColor="#fffddc7b" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_vip_card_period_limit"
+                style="@style/font_size_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/text_white" />
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_11"
+                android:layout_marginStart="@dimen/dp_7"
+                android:alpha="0.4"
+                android:background="@color/color_bg" />
+
+            <TextView
+                android:id="@+id/tv_vip_card_period"
+                style="@style/font_size_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_7"
+                android:gravity="center"
+                android:textColor="@color/text_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_40"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_vip_card_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fffddc7b"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_vip_card_price_unit"
+                style="@style/font_size_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

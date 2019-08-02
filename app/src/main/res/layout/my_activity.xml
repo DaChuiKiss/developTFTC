@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_bg"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity">
+
+    <include layout="@layout/title_bar"/>
+
+    <RelativeLayout
+        android:background="@color/bg_white"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:minHeight="@dimen/dp_44"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/goto_certification"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:text="@string/my1"
+            android:gravity="center|left"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text_normal"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/text_light"
+            android:id="@+id/tv_mycenter_auth"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:minWidth="8dp"
+            android:drawablePadding="@dimen/dp_10"
+            android:minHeight="15dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/bg_white"
+        android:layout_height="@dimen/dp_1">
+       <View
+           android:layout_width="match_parent"
+           android:background="@color/color_bg"
+           android:layout_marginLeft="@dimen/dp_15"
+           android:layout_marginRight="@dimen/dp_15"
+           android:layout_height="@dimen/dp_1">
+
+       </View>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:background="@color/bg_white"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:minHeight="@dimen/dp_44"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text_normal"
+            android:gravity="center|left"
+            android:text="@string/my2" />
+
+        <TextView
+            android:textColor="@color/text_grey"
+            android:id="@+id/tv_mycenter_auth_realName"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/bg_white"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:minHeight="@dimen/dp_44"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:text="@string/my3"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text_normal"
+            android:gravity="center|left"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/text_grey"
+            android:id="@+id/tv_mycenter_auth_account"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/bg_white"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:minHeight="@dimen/dp_44"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:text="@string/my4"
+            android:textColor="@color/text_normal"
+            android:drawablePadding="5dp"
+            android:gravity="center|left"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/text_grey"
+            android:id="@+id/tv_mycenter_auth_countryName"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/bg_white"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:minHeight="@dimen/dp_44"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:text="@string/my5"
+            android:textColor="@color/text_normal"
+            android:drawablePadding="5dp"
+            android:gravity="center|left"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/text_grey"
+            android:id="@+id/tv_mycenter_auth_certNumber"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:minHeight="@dimen/dp_44"
+        android:layout_marginTop="@dimen/dp_11"
+        android:background="@color/bg_white"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_mycenter_auth_gotoSenior"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:minHeight="@dimen/dp_44"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:text="@string/my6"
+                android:textColor="@color/text_normal"
+                android:drawablePadding="5dp"
+                android:gravity="center|left"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_mycenter_auth_Senior"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:drawablePadding="@dimen/dp_10"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/color_bg"
+            android:layout_height="1dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/my7"
+        style="@style/font_size_13"
+        android:textColor="@color/text_grey"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/my8"
+        style="@style/font_size_13"
+        android:textColor="@color/text_grey"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

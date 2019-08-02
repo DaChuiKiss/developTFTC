@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dp_15"
+        android:paddingEnd="@dimen/dp_15">
+
+
+        <!-- 交易类型 -->
+        <LinearLayout
+            style="@style/common_item_holder_height70"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/otc_item_text"
+                android:layout_marginTop="@dimen/dp_0"
+                android:text="@string/tx_type" />
+
+            <RadioGroup
+                android:id="@+id/rg_publish_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_35"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtn_publish_type_buy"
+                    style="@style/font_size_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/radiobutton_style"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:text="@string/buy_online"
+                    android:textColor="@color/text_normal" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_publish_type_sale"
+                    style="@style/font_size_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_40"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableLeft="@drawable/radiobutton_style"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:text="@string/sell_online"
+                    android:textColor="@color/text_normal" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <View style="@style/common_separator_horizontal" />
+
+
+        <!-- 币种 -->
+        <RelativeLayout
+            style="@style/common_item_holder_height70"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                style="@style/otc_item_text"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_0"
+                android:text="@string/tx_coin" />
+
+            <TextView
+                android:id="@+id/tv_publish_coin"
+                style="@style/font_size_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:drawableEnd="@mipmap/goto_next"
+                android:drawablePadding="@dimen/dp_10"
+                android:textColor="@color/text_light" />
+        </RelativeLayout>
+
+        <View style="@style/common_separator_horizontal" />
+
+
+        <!-- 交易货币 -->
+        <RelativeLayout style="@style/common_item_holder_height70">
+
+            <TextView
+                style="@style/otc_item_text"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_0"
+                android:text="@string/tx_currency" />
+
+            <TextView
+                android:id="@+id/tv_publish_currency"
+                style="@style/font_size_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:drawableEnd="@mipmap/goto_next"
+                android:drawablePadding="@dimen/dp_10"
+                android:text="CNY"
+                android:textColor="@color/text_light" />
+        </RelativeLayout>
+
+        <View style="@style/common_separator_horizontal" />
+
+
+        <!-- 单价 -->
+        <LinearLayout
+            style="@style/common_item_holder_height70"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/otc_item_text"
+                android:text="@string/only_price" />
+
+            <EditText
+                android:id="@+id/et_publish_price"
+                style="@style/otc_item_input"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint_keep_2_decimal"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+        <View style="@style/common_separator_horizontal" />
+
+        <!-- 数量 -->
+        <LinearLayout
+            style="@style/common_item_holder_height70"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/otc_item_text"
+                android:text="@string/quantity" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_publish_quantity"
+                    style="@style/otc_item_input"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_keep_2_decimal"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/tv_publish_quantity_unit"
+                    style="@style/font_size_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:textColor="@color/text_light" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/common_separator_horizontal" />
+
+        <!-- 最小交易额 -->
+        <LinearLayout
+            style="@style/common_item_holder_height70"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/otc_item_text"
+                android:text="@string/tx_min_amount" />
+
+            <EditText
+                android:id="@+id/et_publish_min"
+                style="@style/otc_item_input"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <View style="@style/common_separator_horizontal" />
+
+
+        <!-- 最大交易额 -->
+        <LinearLayout
+            style="@style/common_item_holder_height70"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/otc_item_text"
+                android:text="@string/tx_max_amount" />
+
+            <EditText
+                android:id="@+id/et_publish_max"
+                style="@style/otc_item_input"
+                android:inputType="numberDecimal"
+                android:maxLength="7" />
+        </LinearLayout>
+
+        <View style="@style/common_separator_horizontal" />
+
+
+        <!-- 交易密码 -->
+        <LinearLayout
+            style="@style/common_item_holder_height70"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/otc_item_text"
+                android:text="@string/tx_pwd" />
+
+            <EditText
+                android:id="@+id/et_publish_password"
+                style="@style/otc_item_input"
+                android:hint="@string/hint_pls_enter_pwd"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <View style="@style/common_separator_horizontal" />
+
+        <Button
+            android:id="@+id/btn_publish_publish"
+            style="@style/button_shadeless_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:layout_marginTop="@dimen/dp_35"
+            android:layout_marginBottom="@dimen/dp_55"
+            android:background="@drawable/bt_style_blue"
+            android:text="@string/publish_ad"
+            android:textColor="@color/text_white" />
+
+    </LinearLayout>
+</ScrollView>

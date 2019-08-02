@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- no net view -->
+    <LinearLayout
+        android:id="@+id/ll_empty_no_net"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/bg_white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/dp_133"
+            android:layout_height="@dimen/dp_91"
+            android:src="@drawable/img_no_net" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_47"
+            android:text="@string/network_blocking"
+            android:textColor="@color/text_light"
+            style="@style/font_size_15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_14"
+            android:text="@string/no_net"
+            android:textColor="@color/text_grey"
+            style="@style/font_size_15" />
+
+        <TextView
+            android:id="@+id/tv_empty_no_net_reload"
+            android:layout_width="@dimen/dp_125"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginTop="@dimen/dp_25"
+            android:background="@drawable/rounded_borders_blue_r25"
+            android:gravity="center"
+            android:text="@string/loading"
+            android:textColor="@color/text_blue"
+            style="@style/font_size_15"/>
+    </LinearLayout>
+
+
+    <!-- no order view -->
+    <LinearLayout
+        android:background="@color/bg_white"
+        android:id="@+id/ll_empty_no_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/dp_184"
+            android:layout_height="@dimen/dp_133"
+            android:src="@drawable/img_no_order" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_50"
+            android:text="@string/no_order"
+            android:textColor="@color/text_light"
+            style="@style/font_size_15" />
+
+        <TextView
+            android:id="@+id/tv_empty_no_order_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_14"
+            android:text="@string/return_3_seconds"
+            android:textColor="@color/text_grey"
+            style="@style/font_size_15" />
+
+        <TextView
+            android:id="@+id/tv_empty_no_order_find"
+            android:layout_width="@dimen/dp_125"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginTop="@dimen/dp_25"
+            android:background="@drawable/rounded_borders_blue_r25"
+            android:gravity="center"
+            android:text="@string/go_explore"
+            android:textColor="@color/text_blue"
+            style="@style/font_size_15" />
+    </LinearLayout>
+
+
+    <!-- no data view -->
+    <LinearLayout
+        android:background="@color/bg_white"
+        android:id="@+id/ll_empty_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/dp_135"
+            android:layout_height="@dimen/dp_130"
+            android:src="@drawable/img_no_data" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_40"
+            android:text="@string/no_data"
+            android:textColor="@color/text_light"
+            style="@style/font_size_15" />
+    </LinearLayout>
+
+
+</merge>
